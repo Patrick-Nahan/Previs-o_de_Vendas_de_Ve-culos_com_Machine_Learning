@@ -137,12 +137,6 @@ df_anuncios = pd.DataFrame([
     for anuncio in anuncios
 ])
 
-# Exibir os links para verificar se estão completos
-for link in df_anuncios["Link"]:
-    print(link)  # Mostra cada link completo no terminal
-
-
-
 # Exibir os dados coletados
 print("\n🔹 Anúncios de veículos no Mercado Livre:")
 print(df_anuncios)
