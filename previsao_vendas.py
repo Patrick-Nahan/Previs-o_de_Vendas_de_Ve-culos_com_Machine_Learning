@@ -1,6 +1,6 @@
 import requests
 import pandas as pd
-
+pd.set_option('display.max_colwidth', None)
 # Configuração da API FIPE v2
 API_URL = "https://parallelum.com.br/fipe/api/v2"
 

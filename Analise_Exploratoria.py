@@ -1,4 +1,4 @@
-from previsao_vendas import preco_info
+from previsao_vendas import preco_info,df_anuncios
 import matplotlib.pyplot as plt
 import seaborn as sns
 import pandas as pd  # Importação de pandas estava faltando
@@ -19,6 +19,9 @@ else:
 if 'df_anuncios' not in globals():
     raise NameError("A variável df_anuncios não está definida. Certifique-se de carregá-la corretamente.")
 
+def buscar_link():
+    for link in df_anuncios["Link"]:
+        print(link)
 # Criar DataFrame corrigido
 df_precos = pd.DataFrame({
     "Fonte": ["FIPE"] + ["Mercado Livre"] * len(df_anuncios),
